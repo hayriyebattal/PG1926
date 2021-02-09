@@ -1,0 +1,86 @@
+SET 1 ÇÖZÜM:
+
+for i in range(0,100):
+    i +=1
+    
+    if i % 3 == 0 and i % 5 ==0:
+        print("FizzBuzz", end=", ")
+    elif i % 3 == 0:
+        print("Fizz", end=", ")
+    elif i % 5 == 0 :
+        print("Buzz", end=", ")
+    else:
+        print(i, end=", ")
+
+SET 3 ÇÖZÜM:
+
+sayılar=[5,3,8,6,2,0]
+print(sayılar)
+sayılar.insert(0,0)
+sayılar.pop(6)
+print(sayılar)
+
+SET 5 ÇÖZÜM:
+
+class okul1():
+  personel = "müdür", "öğretmen", "güvenlik personeli", "temizlik personeli"
+  öğrenci = "ilkokul öğrencisi"
+  sınıf= "masa","sıra","tahta","pano","silgi""kalem"
+  bahçe= " basketbol potası","bank"
+  kantin= "masa","sandalye","dolap","yiyecekler","içecekler"
+  konum = "İstanbul"
+  
+print(okul1.personel)
+print(okul1.öğrenci)
+print(okul1.sınıf)
+print(okul1.bahçe)
+print(okul1.kantin)
+print(okul1.konum)
+
+del okul1.konum
+
+print(okul1.personel)
+print(okul1.öğrenci)
+print(okul1.sınıf)
+print(okul1.bahçe)
+print(okul1.kantin)
+print(okul1.konum)
+
+class okul2():
+  personel = ["müdür","öğretmen", "güvenlik personeli", "temizlik personeli"]
+  öğrenci = ["lise öğrencisi"]
+  sınıf = ["masa","sıra","tahta","dolap"]
+  bahçe = ["bank","basketbol potası"]
+  yemekhane = ["masa", "sandalye", "yemekler"]
+  kantin = ["sandalye","masa","televizyon"]
+  
+  sınıf.append("bilgisayar")
+  
+print(okul2.personel)
+print(okul2.öğrenci)
+print(okul2.sınıf)
+print(okul2.bahçe)
+print(okul2.yemekhane)
+print(okul2.kantin)
+
+
+class okul3():
+  personel = "rektör","dekan","memur","akademisyen,güvenlik görevlisi"
+  öğrenci = "üniversite öğrencisi"
+  fakülte = "sınıflar","amfiler","öğrenciler","dersler","kütüphane"
+  amfi = "sıra","yazı tahtası","masa","sandalye", "projeksiyon cihazı"
+  sınıf = "sıra" , "masa", "yazı tahtası", "projeksiyon cihazı"
+  kantin = "masa","sandalye","televizyon","koltuk"
+  yemekhane = "masa","sandalye","mutfak","tepsi"
+  kütüphane = "kitap","masa","sandalye","dolap" 
+  
+  kantin = "masa","sandalye","televizyon",  
+
+
+print(okul3.personel)
+print(okul3.öğrenci)
+print(okul3.fakülte)
+print(okul3.amfi)
+print(okul3.yemekhane)
+print(okul3.kütüphane)
+print(okul3.kantin)

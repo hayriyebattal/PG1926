@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <body>
+            <title> Mükemmel Sayı </title>
+            <h3>Mükemmel sayı</h3>
+            <label> Sayı : </label>
+            <input type="text" id="txtSayi"><br><br><br>
+            <input type="button" id="btnHesap" value="HESAPLA"><br><br>
+            <label id="lblSonuc"></label>
+    <script>
+            var btn=document.getElementById("btnHesap");
+            btn.onclick=function(){
+                var i;
+                var toplam=0;
+                var sayi=Number(document.getElementById("txtSayi").value);
+                for(i=1;i<sayi;i++)
+                {
+                        if (sayi%i==0)
+                        {
+                         toplam=toplam+i;
+                        }
+                }
+                        if (sayi==toplam)
+                        {
+                            alert(lblSonuc.innerHTML=sayi + " Sayısı Mükemmel Sayıdır.");
+                        }
+                        else
+                        {
+        
+                            alert(lblSonuc.innerHTML=sayi + " Sayısı Mükemmel Sayı Değildir.");
+                        }
+                }
+
+            </script>
+        
+        </head>
+
+     </body>
+
+</html>

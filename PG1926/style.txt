@@ -1,0 +1,37 @@
+body{
+    background:gray;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+table{
+    margin:auto;   
+}
+td{
+
+    width: 70px;
+    height:70px;
+    background-color: gray;
+    text-align: center;
+    font-size: 3em;
+    text: background-color: gray;
+}
+.black{
+    background:rgba(155, 34, 34, 0.829);
+}
+
+.white{
+    background:white;
+}
+
+.harfler{
+    text-align:center;
+    background-color: gray;
+    vertical-align: bottom;
+    font-size:large;
+}
+.sayılar{
+    text-align: right;
+    background-color: gray;
+    font-size:large;
+}

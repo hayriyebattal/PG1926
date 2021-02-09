@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <body>
+            <title> Asal Sayı </title>
+            <h3> Asal Sayı Sorgulama </h3><br>
+            <input type="text" id="txtSayi" > <br><br><br>
+            <button id="btn">SORGULA</button><br><br>
+            <div id="sonuc"></div>
+<script>
+    function Sorgula()
+    {
+    
+        var text="";
+        var sayac=0;
+        var sayi=Number(document.getElementById("txtSayi").value);
+        for(i=2; i<sayi; i++)
+        {
+            if(sayi%i==0)
+            {
+            sayac++;
+            }
+        }
+            if(sayac==0)
+            {
+            text="Asal Sayı";
+            }
+            else
+            {
+            text="Asal Sayı Değil";
+            }
+        document.getElementById("sonuc").innerHTML=text;
+    }
+        var sorguBtn=document.getElementById("btn");
+        sorguBtn.onclick= Sorgula;     
+</script>
+      
+        </body>
+    
+    </head>   
+        
+</html>

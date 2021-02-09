@@ -1,0 +1,27 @@
+print( "Vücut Kitle İndeksi Hesaplama" "\n")
+boy = int(input("Boyunuz(cm): "))  
+kilo = int(float(input("Kilonuz(kg): ")))
+print("\n")
+  
+    
+sonuc=  kilo/((boy/100)**2)
+
+if (sonuc <18):
+    print((sonuc),"Zayıf" )
+    print("Boyunuza göre uygun ağırlıkta olmadığınızı, zayıf olduğunuzu gösterir. Zayıflık, bazı hastalıklar için risk oluşturan ve istenmeyen bir durumdur. Boyunuza uygun ağırlığa erişmeniz için yeterli ve dengeli beslenmeli, beslenme alışkanlıklarınızı geliştirmeye özen göstermelisiniz.")
+       
+elif (sonuc >=18 and sonuc <25):
+    print((sonuc),"Normal" "\n")
+    print("Boyunuza göre uygun ağırlıkta olduğunuzu gösterir. Yeterli ve dengeli beslenerek ve düzenli fiziksel aktivite yaparak bu ağırlığınızı korumaya özen gösteriniz.")
+        
+elif (sonuc >=25 and sonuc <30):
+    print((sonuc),"Kilolu" "\n")
+    print("Boyunuza göre vücut ağırlığınızın fazla olduğunu gösterir. Fazla kilolu olma durumu gerekli önlemler alınmadığı takdirde pek çok hastalık için risk faktörü olan obeziteye (şişmanlık) yol açar.")
+        
+elif (sonuc >=30 and sonuc <35):
+    print((sonuc),"Obez Riski" "\n")
+    print("Boyunuza göre vücut ağırlığınızın fazla olduğunun bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. Bir sağlık kuruluşuna başvurarak hekim / diyetisyen kontrolünde zayıflayarak normal ağırlığa ulaşmanız sağlığınız açısından çok önemlidir.")
+      
+else:
+    print((sonuc),"Ciddi Obez Riski" "\n")
+    print("Boyunuza göre vücut ağırlığınızın fazla olduğunun bir başka deyişle şişman olduğunuzun bir göstergesidir. Şişmanlık, kalp-damar hastalıkları, diyabet, hipertansiyon v.b. kronik hastalıklar için risk faktörüdür. Bir sağlık kuruluşuna başvurarak hekim / diyetisyen kontrolünde zayıflayarak normal ağırlığa ulaşmanız sağlığınız açısından çok önemlidir.")
